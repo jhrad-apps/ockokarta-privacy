@@ -15,137 +15,100 @@
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
             line-height: 1.6;
             color: #333;
-            background: linear-gradient(135deg, #f5f7fa 0%, #e4e9f2 100%);
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4e8ec 100%);
             min-height: 100vh;
-        }
-        
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
             padding: 40px 20px;
         }
         
-        .card {
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
             background: white;
-            border-radius: 16px;
-            padding: 40px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-        }
-        
-        .header {
-            text-align: center;
-            margin-bottom: 40px;
-            padding-bottom: 30px;
-            border-bottom: 1px solid #eee;
-        }
-        
-        .app-icon {
-            width: 80px;
-            height: 80px;
-            background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%);
-            border-radius: 18px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 20px;
-            font-size: 40px;
-        }
-        
-        h1 {
-            color: #1a1a1a;
-            font-size: 28px;
-            margin-bottom: 8px;
-        }
-        
-        .subtitle {
-            color: #666;
-            font-size: 14px;
-        }
-        
-        h2 {
-            color: #4ECDC4;
-            font-size: 20px;
-            margin: 30px 0 15px;
-        }
-        
-        p {
-            margin-bottom: 15px;
-            color: #444;
-        }
-        
-        ul {
-            margin: 15px 0;
-            padding-left: 25px;
-        }
-        
-        li {
-            margin-bottom: 8px;
-            color: #444;
-        }
-        
-        .highlight {
-            background: #f0faf9;
-            border-left: 4px solid #4ECDC4;
-            padding: 15px 20px;
-            border-radius: 0 8px 8px 0;
-            margin: 20px 0;
-        }
-        
-        .highlight p {
-            margin: 0;
-            font-weight: 500;
-        }
-        
-        .no-list {
-            list-style: none;
-            padding-left: 0;
-        }
-        
-        .no-list li {
-            position: relative;
-            padding-left: 28px;
-        }
-        
-        .no-list li::before {
-            content: "✗";
-            position: absolute;
-            left: 0;
-            color: #e74c3c;
-            font-weight: bold;
-        }
-        
-        .contact {
-            background: #f8f9fa;
-            border-radius: 12px;
-            padding: 20px;
-            text-align: center;
-            margin-top: 30px;
-        }
-        
-        .contact a {
-            color: #4ECDC4;
-            text-decoration: none;
-            font-weight: 500;
-        }
-        
-        .footer {
-            text-align: center;
-            margin-top: 30px;
-            padding-top: 20px;
-            border-top: 1px solid #eee;
-            color: #999;
-            font-size: 14px;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            padding: 50px 40px;
         }
         
         .lang-switch {
-            text-align: center;
+            text-align: right;
             margin-bottom: 20px;
         }
         
         .lang-switch a {
-            color: #4ECDC4;
+            color: #2D9A8C;
             text-decoration: none;
-            font-size: 14px;
+        }
+        
+        .app-icon {
+            font-size: 64px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        h1 {
+            color: #2D9A8C;
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 40px;
+            font-size: 0.95em;
+        }
+        
+        h2 {
+            color: #2D9A8C;
+            font-size: 1.3em;
+            margin-top: 35px;
+            margin-bottom: 15px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #e8f5f3;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            color: #555;
+        }
+        
+        ul {
+            margin-bottom: 15px;
+            padding-left: 25px;
+            color: #555;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        .contact-card {
+            background: linear-gradient(135deg, #e8f5f3 0%, #d4efea 100%);
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            margin: 30px 0;
+        }
+        
+        .contact-card a {
+            color: #2D9A8C;
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: 600;
+        }
+        
+        a {
+            color: #2D9A8C;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            color: #999;
+            font-size: 0.9em;
         }
     </style>
 </head>
@@ -155,67 +118,71 @@
             <a href="privacy-policy-en.html">🇬🇧 English version</a>
         </div>
         
-        <div class="card">
-            <div class="header">
-                <div class="app-icon">💉</div>
-                <h1>Zásady ochrany osobních údajů</h1>
-                <p class="subtitle">Ockokarta · Poslední aktualizace: Prosinec 2025</p>
-            </div>
-            
-            <h2>Úvod</h2>
-            <p>Očkokarta je aplikace pro sledování očkování vás a vaší rodiny. Vaše soukromí bereme vážně. Tato stránka vysvětluje, jak aplikace zachází s vašimi daty.</p>
-            
-            <h2>Jaká data aplikace zpracovává</h2>
-            <p>Aplikace umožňuje ukládat následující informace:</p>
-            <ul>
-                <li>Jména členů rodiny</li>
-                <li>Rok narození</li>
-                <li>Pohlaví</li>
-                <li>Záznamy o očkování (název vakcíny, datum, datum další dávky)</li>
-                <li>Poznámky k očkování</li>
-            </ul>
-            
-            <h2>Kde jsou data uložena</h2>
-            <div class="highlight">
-                <p>Všechna vaše data jsou uložena výhradně ve vašem zařízení. Aplikace neposílá žádné informace na vzdálené servery.</p>
-            </div>
-            <p>Nemáme přístup k vašim datům a nemůžeme je vidět, číst ani zpracovávat.</p>
-            
-            <h2>Co neděláme</h2>
-            <ul class="no-list">
-                <li>Nesbíráme žádná osobní data</li>
-                <li>Neposíláme data na žádné servery</li>
-                <li>Nepoužíváme analytické nástroje třetích stran</li>
-                <li>Nezobrazujeme reklamy</li>
-                <li>Nesdílíme informace s třetími stranami</li>
-                <li>Nevyžadujeme registraci ani přihlášení</li>
-            </ul>
-            
-            <h2>Notifikace</h2>
-            <p>Aplikace může odesílat lokální upozornění na blížící se termíny přeočkování. Tato upozornění jsou generována přímo ve vašem zařízení a žádné informace neopouštějí váš telefon.</p>
-            
-            <h2>Zabezpečení</h2>
-            <p>Aplikace nabízí volitelné zabezpečení pomocí Face ID, Touch ID nebo PIN kódu. Toto zabezpečení chrání přístup k aplikaci na vašem zařízení.</p>
-            
-            <h2>Nákupy v aplikaci</h2>
-            <p>Aplikace nabízí jednorázový nákup pro odemčení plné verze. Platby jsou zpracovávány výhradně společností Apple prostřednictvím App Store. Nemáme přístup k vašim platebním údajům.</p>
-            
-            <h2>Děti</h2>
-            <p>Aplikace nesbírá vědomě žádné osobní údaje od nikoho, včetně dětí mladších 13 let. Vzhledem k tomu, že všechna data zůstávají pouze na vašem zařízení, nepředstavuje používání aplikace žádné riziko pro soukromí dětí.</p>
-            
-            <h2>Změny zásad</h2>
-            <p>Pokud dojde ke změnám těchto zásad, aktualizujeme datum "Poslední aktualizace" na této stránce.</p>
-            
-            <div class="contact">
-                <h2 style="margin-top: 0;">Kontakt</h2>
-                <p>Máte-li dotazy ohledně těchto zásad ochrany osobních údajů:</p>
-                <p><a href="mailto:DOPLŇ_SVŮJ_EMAIL">📧 jhrad.apps@proton.me</a></p>
-            </div>
-            
-            <div class="footer">
-                © 2025 Očkokarta
-            </div>
+        <div class="app-icon">💉</div>
+        <h1>Zásady ochrany osobních údajů</h1>
+        <p class="subtitle">Očkokarta · Poslední aktualizace: Prosinec 2025</p>
+        
+        <h2>Úvod</h2>
+        <p>Očkokarta je aplikace pro sledování očkování vás, vaší rodiny a domácích mazlíčků. Vaše soukromí bereme vážně. Tato stránka vysvětluje, jak aplikace zachází s vašimi daty.</p>
+        
+        <h2>Jaká data aplikace zpracovává</h2>
+        <p>Aplikace umožňuje ukládat následující informace:</p>
+        <ul>
+            <li>Jména členů rodiny a mazlíčků</li>
+            <li>Rok narození</li>
+            <li>Pohlaví</li>
+            <li>Záznamy o očkování (název vakcíny, datum, datum další dávky)</li>
+            <li>Poznámky k očkování</li>
+        </ul>
+        
+        <h2>Kde jsou data uložena</h2>
+        <p>Všechna vaše osobní data a záznamy o očkování jsou uložena výhradně ve vašem zařízení. Tyto informace neposíláme na žádné servery.</p>
+        <p>Nemáme přístup k vašim zdravotním datům a nemůžeme je vidět, číst ani zpracovávat.</p>
+        
+        <h2>Analytika</h2>
+        <p>Pro zlepšení aplikace používáme službu TelemetryDeck, která sbírá anonymní statistiky o používání aplikace. Tato data:</p>
+        <ul>
+            <li>Nejsou spojena s vaší identitou</li>
+            <li>Neobsahují žádné osobní údaje ani zdravotní záznamy</li>
+            <li>Nelze použít k vašemu sledování</li>
+            <li>Slouží pouze ke zlepšení aplikace</li>
+        </ul>
+        <p>Více o ochraně soukromí TelemetryDeck: <a href="https://telemetrydeck.com/privacy" target="_blank">telemetrydeck.com/privacy</a></p>
+        
+        <h2>Co neděláme</h2>
+        <ul>
+            <li>Nesbíráme žádná osobní data</li>
+            <li>Neposíláme vaše zdravotní záznamy na žádné servery</li>
+            <li>Nezobrazujeme reklamy</li>
+            <li>Nesdílíme informace s třetími stranami</li>
+            <li>Nevyžadujeme registraci ani přihlášení</li>
+        </ul>
+        
+        <h2>Notifikace</h2>
+        <p>Aplikace může odesílat lokální upozornění na blížící se termíny přeočkování. Tato upozornění jsou generována přímo ve vašem zařízení a žádné informace neopouštějí váš telefon.</p>
+        
+        <h2>Zabezpečení</h2>
+        <p>Aplikace nabízí volitelné zabezpečení pomocí Face ID, Touch ID nebo PIN kódu. Toto zabezpečení chrání přístup k aplikaci na vašem zařízení.</p>
+        
+        <h2>Nákupy v aplikaci</h2>
+        <p>Aplikace nabízí jednorázový nákup pro odemčení plné verze. Platby jsou zpracovávány výhradně společností Apple prostřednictvím App Store. Nemáme přístup k vašim platebním údajům.</p>
+        
+        <h2>Děti</h2>
+        <p>Aplikace nesbírá vědomě žádné osobní údaje od nikoho, včetně dětí mladších 13 let. Vzhledem k tomu, že všechna zdravotní data zůstávají pouze na vašem zařízení, nepředstavuje používání aplikace žádné riziko pro soukromí dětí.</p>
+        
+        <h2>Změny zásad</h2>
+        <p>Pokud dojde ke změnám těchto zásad, aktualizujeme datum "Poslední aktualizace" na této stránce.</p>
+        
+        <h2>Kontakt</h2>
+        <p>Máte-li dotazy ohledně těchto zásad ochrany osobních údajů:</p>
+        
+        <div class="contact-card">
+            <a href="mailto:jhrad.apps@proton.me">📧 jhrad.apps@proton.me</a>
         </div>
+        
+        <footer>
+            © 2025 Očkokarta
+        </footer>
     </div>
 </body>
 </html>
